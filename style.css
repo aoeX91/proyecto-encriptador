@@ -93,7 +93,7 @@
         background-color: white;
     }
         .cuerpo10{
-            display: none;
+            display: block;
             position: relative;
             text-align: center;
         }
@@ -114,7 +114,7 @@
             }
         .cuerpo20{
             position: relative;
-            display: block;
+            display: none;
             text-align: center;
         }
             .txtout{
@@ -189,6 +189,7 @@
 }
 @media screen and (max-width:380px){
     .main{
+        margin: 0 auto;
         width: 375px;
         height: auto;
         flex-direction: column;
@@ -217,6 +218,11 @@
         .btn:hover{
             font-size: 1.7rem;
         }
-
+        .tMuñeco{
+            font-size: 1.6rem;
+        }
+        .pMuñeco{
+            font-size: 1.2rem;
+        }
    
 }

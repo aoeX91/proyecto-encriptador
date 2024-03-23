@@ -5,24 +5,38 @@ const xmatriz=[
     ["o", "ober"],
     ["u", "ufat"]
 ]
-const txtUsuario=document.getElementById(txtIn).value;
 
+function mostrarEncri(){
+    let  txtUsuario=document.getElementById("txtin").value;
+    nuevoTexto=encri(txtUsuario)
+    document.getElementById("txtout").innerHTML=nuevoTexto
+}
+function mostrarDencri(){
+    let txtUsuario=document.getElementById("txtin").value;
+    nuevoTexto=dencri(txtUsuario)
+    document.getElementById("txtout").innerHTML=nuevoTexto
+}
+function copiarResu(){
+    let resultado=document.getElementById("txtout")
+    navigator.clipboard.writeText(resultado.value)
+}
 
-function encri(newTxt){
+function encri(paraEncriptar){
     for(i=0;i<xmatriz.length;i++){
-        newTxt=newTxt.replaceAll(
+        paraEncriptar=paraEncriptar.replaceAll(
             xmatriz[i][0],
             xmatriz[i][1]
         )
+        
     }
-    return newTxt
+    return paraEncriptar
 }
-function dencri(newTxt){
+function dencri(paraDesencriptar){
     for(i=0;i<xmatriz.length;i++){
-        newTxt=newTxt.replaceAll(
+        paraDesencriptar=paraDesencriptar.replaceAll(
             xmatriz[i][1],
             xmatriz[i][0]
         )
     }
-    return newTxt
+    return paraDesencriptar
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>Document</title>
@@ -23,8 +23,8 @@
                 <p class="info">ⓘ Solo minúsculas y sin acentos</p>
             </div>
             <div class="cajaBtn">
-                <button class="btn encri">Encriptar</button>
-                <button class="btn dencri">Desencriptar</button>
+                <button class="btn encri" onclick="mostrarEncri()">Encriptar</button>
+                <button class="btn dencri" onclick="mostrarDencri()">Desencriptar</button>
             </div>
         </section>
 
@@ -37,11 +37,13 @@
             </div>
 
             <div class="cuerpo20">
-                <textarea class="txtout" disabled></textarea>
-                <button class="btn copiar">Copiar</button>
+                <textarea class="txtout" id="txtout" disabled></textarea>
+                <button class="btn copiar" onclick="copiarResu()">Copiar</button>
             </div>
         </section>
     </main>
     <footer></footer>
+    <script src="app.js"></script>
 </body>
+
 </html>

@@ -9,18 +9,39 @@ const xmatriz=[
 function mostrarEncri(){
     let  txtUsuario=document.getElementById("txtin").value;
     nuevoTexto=encri(txtUsuario)
-    document.getElementById("txtout").innerHTML=nuevoTexto
-    document.getElementById("cuerpo10").style.display = "none";
-    document.getElementById("cuerpo20").style.display = "block";
+    if (txtUsuario==nuevoTexto){
+        let txtarea3=document.getElementById("txtin");
+        txtarea3.value="";
+        document.getElementById("cuerpo10").style.display = "block";
+        document.getElementById("cuerpo20").style.display = "none";
+    } else{
+        let txtarea3=document.getElementById("txtin");
+        txtarea3.value="";
+        document.getElementById("txtout").innerHTML=nuevoTexto
+        document.getElementById("cuerpo10").style.display = "none";
+        document.getElementById("cuerpo20").style.display = "block";
+    }
+    
 }
 function mostrarDencri(){
     let txtUsuario=document.getElementById("txtin").value;
     nuevoTexto=dencri(txtUsuario)
-    document.getElementById("txtout").innerHTML=nuevoTexto
-    document.getElementById("cuerpo10").style.display = "none";
-    document.getElementById("cuerpo20").style.display = "block";
+    if (txtUsuario==nuevoTexto){
+        let txtarea3=document.getElementById("txtin");
+        txtarea3.value="";
+        document.getElementById("cuerpo10").style.display = "block";
+        document.getElementById("cuerpo20").style.display = "none";
+    } else{
+        let txtarea3=document.getElementById("txtin");
+        txtarea3.value="";
+        document.getElementById("txtout").innerHTML=nuevoTexto
+        document.getElementById("cuerpo10").style.display = "none";
+        document.getElementById("cuerpo20").style.display = "block";
+    }
 }
 function copiarResu(){
+    let txtarea3=document.getElementById("txtin");
+        txtarea3.value="";
     let resultado=document.getElementById("txtout")
     navigator.clipboard.writeText(resultado.value)
     document.getElementById('kisu').innerHTML='¡Copiado!';

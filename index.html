@@ -17,7 +17,7 @@
                 <h2 class="titulo">a</h2>
             </div>
             <div class="cajaTxtarea">
-                <textarea class="txtin" id="txtin" placeholder="ingrese texto aquí"></textarea>
+                <textarea class="txtin" id="txtin" placeholder="ingrese texto aquí" onkeyup="todoMinuscula(this)"></textarea>
             </div>
             <div class="cajaInfo">
                 <p class="info">ⓘ Solo minúsculas y sin acentos</p>
@@ -38,7 +38,7 @@
 
             <div class="cuerpo20" id="cuerpo20">
                 <textarea class="txtout" id="txtout" disabled></textarea>
-                <button class="btn copiar" onclick="copiarResu()">Copiar</button>
+                <button class="btn copiar" id="kisu" onclick="copiarResu()">Copiar</button>
             </div>
         </section>
     </main>

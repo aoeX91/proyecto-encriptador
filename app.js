@@ -23,7 +23,14 @@ function mostrarDencri(){
 function copiarResu(){
     let resultado=document.getElementById("txtout")
     navigator.clipboard.writeText(resultado.value)
-    
+    document.getElementById('kisu').innerHTML='¡Copiado!';
+    setTimeout(() => {
+        document.getElementById('kisu').innerHTML='Copiar'
+    }, 2000);
+}
+
+function todoMinuscula(x){
+    x.value=x.value.toLowerCase()
 }
 
 function encri(paraEncriptar){
@@ -35,6 +42,7 @@ function encri(paraEncriptar){
     }
     return paraEncriptar
 }
+
 function dencri(paraDesencriptar){
     for(i=0;i<xmatriz.length;i++){
         paraDesencriptar=paraDesencriptar.replaceAll(

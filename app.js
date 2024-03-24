@@ -10,15 +10,20 @@ function mostrarEncri(){
     let  txtUsuario=document.getElementById("txtin").value;
     nuevoTexto=encri(txtUsuario)
     document.getElementById("txtout").innerHTML=nuevoTexto
+    document.getElementById("cuerpo10").style.display = "none";
+    document.getElementById("cuerpo20").style.display = "block";
 }
 function mostrarDencri(){
     let txtUsuario=document.getElementById("txtin").value;
     nuevoTexto=dencri(txtUsuario)
     document.getElementById("txtout").innerHTML=nuevoTexto
+    document.getElementById("cuerpo10").style.display = "none";
+    document.getElementById("cuerpo20").style.display = "block";
 }
 function copiarResu(){
     let resultado=document.getElementById("txtout")
     navigator.clipboard.writeText(resultado.value)
+    
 }
 
 function encri(paraEncriptar){
@@ -27,7 +32,6 @@ function encri(paraEncriptar){
             xmatriz[i][0],
             xmatriz[i][1]
         )
-        
     }
     return paraEncriptar
 }

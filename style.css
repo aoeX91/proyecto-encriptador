@@ -93,7 +93,7 @@
         background-color: white;
     }
         .cuerpo10{
-            display: none;
+            display: block;
             position: relative;
             text-align: center;
         }
@@ -114,7 +114,7 @@
             }
         .cuerpo20{
             position: relative;
-            display: block;
+            display: none;
             text-align: center;
         }
             .txtout{

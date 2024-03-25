@@ -49,7 +49,6 @@
             position: relative;
             font-size: 1.2rem;
             font-weight: bolder;
-            font-style: italic;
             top: 50px;
             left: 200px;
         }
@@ -137,7 +136,7 @@
                 top: 180px;
             }
             
-@media screen and (max-width:800px){
+@media screen and (max-width:980px){
     .main{
         width: 768px;
         height: auto;

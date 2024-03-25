@@ -53,6 +53,7 @@ function copiarResu(){
 function todoMinuscula(x){
     x.value=x.value.toLowerCase()
     x.value=x.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+    x.value=x.value.replace(/[^\w\s]/gi, ' ')
 }
 
 function encri(paraEncriptar){
